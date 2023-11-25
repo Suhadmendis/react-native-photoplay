@@ -1,15 +1,16 @@
 import React from 'react';
 import { View } from 'react-native';
-import FadeInView from './src/FadeInView';
-
+import LoginScreen from './src/Screens/LoginScreen';
+import { StatusBar } from 'expo-status-bar';
 
 const App = () => {
+
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <FadeInView>
-        {/* Your content */}
-      </FadeInView>
-    </View>
+    <>
+    <StatusBar hidden />
+    <LoginScreen />
+    </>
+
   );
 };
 
