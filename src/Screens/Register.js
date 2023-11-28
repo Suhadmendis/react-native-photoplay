@@ -12,7 +12,7 @@ import {
 const registerUser = require("../assets/icons/registeruser.png");
 const backIcon = require("../assets/icons/backIcon.png");
 
-const LoginScreen = () => {
+const Register = () => {
   return (
     <View style={styles.container}>
       <SafeAreaView>
@@ -90,7 +90,7 @@ const LoginScreen = () => {
   );
 };
 
-export default LoginScreen;
+export default Register;
 
 const styles = StyleSheet.create({
   container: {
