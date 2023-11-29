@@ -1,0 +1,26 @@
+{
+    "app": {
+      "header": {
+        "rating": 4.0,
+        "genres": ["Movie", "Adventure", "Comedy", "Family"]
+      },
+      "currentWatching": [
+        {
+          "id": 1,
+          "title": "Narcos"
+        },
+        {
+          "id": 2,
+          "title": "Deadpool 2"
+        },
+        {
+          "id": 3,
+          "title": "Annabelle"
+        },
+        {
+          "id": 4,
+          "title": "Frozen"
+        }
+      ]
+    }
+  }
