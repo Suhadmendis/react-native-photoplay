@@ -23,57 +23,7 @@ const data = DATA_SET;
 const DownloadScreen = () => {
   return (
     <View style={styles.container}>
-      <SafeAreaView style={styles.safeArea}>
-        <View style={styles.listPallet}>
-          {data.map((element) => {
-            let imageName = "";
-            if (element.id == 1) {
-              imageName = image_1;
-            }
-            if (element.id == 2) {
-              imageName = image_2;
-            }
-            if (element.id == 3) {
-              imageName = image_3;
-            }
-            if (element.id == 4) {
-              imageName = image_4;
-            }
-            if (element.id == 5) {
-              imageName = image_5;
-            }
-            if (element.id == 6) {
-              imageName = image_6;
-            }
-            return (
-              <View style={styles.elementArea}>
-                <View style={styles.elementImageArea}>
-                  <Image
-                    source={imageName}
-                    style={styles.elementImage}
-                    resizeMode="cover"
-                  />
-                </View>
-                <View style={styles.elementInfoArea}>
-                  <Text style={styles.elementInfoTitle}>{element.title}</Text>
-                  <View style={styles.elementInfo}>
-                    {element.episodes != 0 ? (
-                      <>
-                        <Text style={styles.elementInfo1}>
-                          {element.episodes} Episodes
-                        </Text>
-                        <Text style={styles.elementInfo1}> | </Text>
-                      </>
-                    ) : null}
 
-                    <Text style={styles.elementInfo2}>{element.size}</Text>
-                  </View>
-                </View>
-              </View>
-            );
-          })}
-        </View>
-      </SafeAreaView>
     </View>
   );
 };
@@ -81,44 +31,5 @@ const DownloadScreen = () => {
 export default DownloadScreen;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-  safeArea: {
-    flex: 1,
-  },
-  listPallet: {
-    margin: 20,
-  },
-  elementArea: {
-    flexDirection: "row",
-    marginBottom: 25,
-  },
-  elementImageArea: {
-    width: 170,
-  },
-  elementImage: {
-    width: "100%",
-    height: 100,
-  },
-  elementInfoArea: {
-    flex: 1,
-    padding: 13,
-    justifyContent: "center",
-  },
-  elementInfoTitle: {
-    color: "#FFFFFF",
-    fontSize: 16,
-    marginBottom: 5,
-  },
-  elementInfo: {
-    flexDirection: "row",
-  },
-  elementInfo1: {
-    color: "#FFFFFF95",
-  },
-  elementInfo2: {
-    color: "#FFFFFF95",
-  },
+  container: {},
 });

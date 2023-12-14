@@ -81,11 +81,11 @@ const App = () => {
         <Tab.Screen name="Profile" component={ProfileScreen} />
       </Tab.Navigator>
       <StatusBar hidden />
-      {/* <ForgotPassword /> */}
 
-      {/* <LoginScreen /> */}
-      {/* <Register /> */}
     </NavigationContainer>
+    // <ForgotPassword />
+    // <LoginScreen />
+    // <Register />
   );
 };
 
