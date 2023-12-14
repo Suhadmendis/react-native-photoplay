@@ -100,16 +100,22 @@ const CurrentlyWatchingSection = () => {
   );
 };
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <View style={styles.mainImageArea}>
+      <TouchableOpacity
+        activeOpacity={0.8}
+        onPress={() => {
+          navigation.navigate('Detail');
+        }}
+        style={styles.mainImageArea}
+      >
         <Image
           source={doraMainImage}
           style={styles.mainImage}
           resizeMode="contain"
         />
-      </View>
+      </TouchableOpacity>
 
       <View style={styles.ratingsSection}>
         <Text style={styles.number}>{data.header.rating}.0</Text>
